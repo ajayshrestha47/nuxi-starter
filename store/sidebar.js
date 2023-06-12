@@ -6,7 +6,7 @@ export const useSidebarStore = defineStore({
         showSidenav: true,
     }),
     actions: {
-        toggleSidebar() {
+        toggleSidebar(state) {
             const sidenav_show = document.querySelector(".container-scroller");
             if (sidenav_show.classList.contains("sidebar-icon-only")) {
                 sidenav_show.classList.remove("sidebar-icon-only");
